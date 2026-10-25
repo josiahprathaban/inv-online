@@ -11,3 +11,99 @@
 /* Let the invitation preview shrink naturally in narrow layouts. */
 .experience-grid>*{min-width:0}
 @media(max-width:650px){.experience-grid{grid-template-columns:minmax(0,1fr)}.demo-invite>p{font-size:clamp(45px,13vw,62px)}}
+
+/* Readable supporting type at every screen size. */
+:root { --muted: #6d635f; }
+body { font-size: 16px; }
+.site-header nav a { font-size: 14px; }
+.header-cta { font-size: 13px; }
+.brand small { font-size: 9px; }
+.eyebrow, .hero .eyebrow, .final-cta .eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.3px;
+}
+.tiny-line { flex-shrink: 0; }
+.hero-description,
+.section-intro > p:last-child,
+.experience-details p,
+.address-grid > div > p:last-child,
+.sharing-copy > p:not(.eyebrow),
+.steps p,
+.package-story > p:not(.eyebrow),
+.faq-list details p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.hero-description { max-width: 395px; }
+.section-intro > p:last-child { max-width: 490px; }
+.sharing-copy > p:not(.eyebrow) { max-width: 410px; }
+.hero-note { font-size: 12px; }
+.button, .price-card .button { font-size: 14px; min-height: 52px; }
+.hero-bottom { font-size: 10px; letter-spacing: 1px; }
+.promise-strip { font-size: 13px; gap: 24px; }
+.art-caption { font-size: 9px; letter-spacing: 1px; }
+.hero-handwritten { bottom: 0; }
+.front-card > .micro, .back-card .micro { font-size: 7px; letter-spacing: .8px; }
+.card-date { font-size: 10px; letter-spacing: 1px; }
+.demo-browser { font-size: 10px; height: 36px; }
+.demo-invite > .micro { font-size: 9px; letter-spacing: 1px; }
+.demo-caption { align-items: flex-start; }
+.demo-caption > span { font-size: 9px; letter-spacing: .7px; }
+.demo-caption button { font-size: 12px; white-space: normal; text-align: right; }
+.address-art > .micro { font-size: 10px; letter-spacing: 1px; }
+.domain-example { font-size: 15px; }
+.domain-example strong { font-size: 17px; }
+.message-paper > .micro { font-size: 9px; letter-spacing: 1px; }
+.guest-line label { font-size: 13px; }
+.message-bubble, .message-bubble p { font-size: 14px; line-height: 1.8; }
+.message-url, .message-signature { font-size: 12px; }
+.demo-hint { font-size: 9px; letter-spacing: .6px; }
+.text-link { font-size: 14px; }
+.price-top .eyebrow { font-size: 10px; }
+.price-caption { font-size: 14px; line-height: 1.7; }
+.price-card ul { margin-top: 24px; }
+.price-card li { font-size: 14px; line-height: 1.7; margin-bottom: 14px; }
+.price-card li:before { font-size: 14px; }
+.price-footnote { font-size: 12px; line-height: 1.7; }
+.faq-list summary { font-size: 15px; line-height: 1.7; }
+.final-cta p:not(.eyebrow) { font-size: 16px; }
+.contact-number { font-size: 13px; }
+.site-footer > div > a { font-size: 13px; }
+.site-footer > div > span { font-size: 12px; }
+.sample-content > .eyebrow { font-size: 10px; }
+@media (min-width: 651px) and (max-width: 1000px) {
+  .experience-grid, .sharing, .package, .faq { gap: 32px; }
+  .price-card { padding-inline: 24px; }
+  .hero-bottom { font-size: 9px; }
+}
+@media (max-width: 650px) {
+  .header-cta { font-size: 11px; }
+  .hero .eyebrow, .eyebrow, .final-cta .eyebrow { font-size: 10px; letter-spacing: 1px; }
+  .hero .button, .final-cta .button { font-size: 14px; }
+  .hero-note { font-size: 12px; }
+  .hero-bottom { flex-direction: column; align-items: flex-start; gap: 12px; font-size: 9px; }
+  .hero-bottom > span { max-width: none; }
+  .promise-strip { gap: 14px 10px; font-size: 12px; }
+  .promise-strip > span { white-space: normal; }
+  .hero-art { margin-top: 36px; margin-bottom: 15px; }
+  .art-caption { bottom: 39px; font-size: 8px; max-width: 140px; line-height: 1.6; }
+  .hero-handwritten { bottom: 0; }
+  .front-card > .micro, .back-card .micro { font-size: 6.5px; letter-spacing: .5px; }
+  .card-date { font-size: 8px; }
+  .card-date i { padding-inline: 2px; }
+  .demo-browser { font-size: 9px; padding-inline: 10px; }
+  .demo-caption { gap: 15px; padding-block: 18px; }
+  .demo-caption > span { font-size: 8px; }
+  .demo-caption button { font-size: 12px; }
+  .domain-example strong { font-size: 16px; }
+  .sharing-demo { padding: 20px; }
+  .message-paper { padding: 24px 18px; }
+  .price-card { padding: 30px 25px; }
+  .price-card li { font-size: 14px; }
+  .price-card .button { gap: 13px; padding-inline: 16px; }
+  .price-footnote { font-size: 12px; }
+  .faq-list summary { font-size: 15px; }
+  .final-cta p:not(.eyebrow) { font-size: 15px; max-width: 320px; }
+  .site-footer > div { align-items: flex-start; gap: 20px; }
+  .site-footer > div > span { font-size: 11px; text-align: right; }
+}
